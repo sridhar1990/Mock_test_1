@@ -119,8 +119,8 @@ class searching
             if(!empty($data['email']))
             {
                 $value_q['type'] = 'email';
-				$value_q['search_col_name'] = 'email';
-				if ($value_q['type']=='email') 
+		$value_q['search_col_name'] = 'email';
+		if ($value_q['type']=='email') 
                 {   
                     // $query='SELECT '.$value_q['get_colms'].' FROM '.$value_q['table_name'].' WHERE '.$value_q['search_col_name'].'="'.$email.'"';
                     $query='SELECT '.$value_q['get_colms'].' FROM '.$value_q['table_name'].' WHERE '.$value_q['search_col_name'].' LIKE "%'.$email.'%"';
